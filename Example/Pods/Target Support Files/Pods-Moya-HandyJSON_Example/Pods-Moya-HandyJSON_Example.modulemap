@@ -1,0 +1,6 @@
+framework module Pods_Moya_HandyJSON_Example {
+  umbrella header "Pods-Moya-HandyJSON_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

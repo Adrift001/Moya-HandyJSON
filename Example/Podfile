@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Moya-HandyJSON_Example' do
+  pod 'Moya-HandyJSON', :path => '../'
+
+  target 'Moya-HandyJSON_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
