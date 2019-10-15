@@ -18,12 +18,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let provider = MoyaProvider<Httpbin>()
-        provider.rx.request(.ip).mapObject(IP.self).subscribe(onSuccess: { (model) in
+        let provider = MoyaProvider<Httpbin>(plugins: [NetworkLoggerPlugin(verbose: true)])
+        provider.rx.request(.ip).mapObject(IP.self).flatMap { (model) -> Single<IP> in
+            return provider.rx.request(.ip).mapObject(IP.self)
+        }.subscribe(onSuccess: { (model) in
             print(model.origin)
-        }) { (error) in
-            
-        }.disposed(by: bag)
+        }).disposed(by: bag)
     }
 
 }

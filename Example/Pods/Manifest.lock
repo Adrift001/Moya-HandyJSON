@@ -14,28 +14,25 @@ PODS:
   - RxSwift (4.5.0)
 
 DEPENDENCIES:
-  - Moya-HandyJSON (from `../`)
+  - Moya-HandyJSON
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - HandyJSON
     - Moya
+    - Moya-HandyJSON
     - Result
     - RxSwift
-
-EXTERNAL SOURCES:
-  Moya-HandyJSON:
-    :path: "../"
 
 SPEC CHECKSUMS:
   Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
   HandyJSON: 992f2d661716d6a91de82d0056927bc7813b5770
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
-  Moya-HandyJSON: e55f45e8a6fd1b3226de01b2afeb929bd4f875cd
+  Moya-HandyJSON: 064de1e07c6a1410eb811e8cb7e9eef2b4dbb815
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
 
-PODFILE CHECKSUM: e9b0a9ee633bacf21cf71c23c79c5f0f310fdd5b
+PODFILE CHECKSUM: aaaff595059b384235830ca5d0a626f3623a48cc
 
 COCOAPODS: 1.8.3
