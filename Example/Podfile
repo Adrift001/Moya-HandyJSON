@@ -6,5 +6,5 @@ target 'Moya-HandyJSON_Example' do
   use_frameworks!
 
   # Pods for Moya-HandyJSON_Example
-  pod 'Moya-HandyJSON'
+  pod 'Moya-HandyJSON', :path => '../'
 end
